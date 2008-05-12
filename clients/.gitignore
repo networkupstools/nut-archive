@@ -12,3 +12,5 @@ upsmon
 upsrw
 upssched
 .libs
+*.pyc
+*.pyo
