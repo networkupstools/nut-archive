@@ -1,3 +1,10 @@
+Thu Jul 17 14:24:24 UTC 2008 / Arnaud Quette <aquette.dev@gmail.com>
+
+ * preliminary support for "make package"
+   - m4/nut_check_os.m4: NUT_CHECK_OS m4 macro to determine the system name
+   - Makefile.am, packaging/Makefile.am, debian.Makefile.am: add some rules
+     to manage the "package" build target
+
 Mon Jul  7 19:00:00 UTC 2008 / Arnaud Quette <aquette.dev@gmail.com>
 
  - m4/nut_check_libhal.m4, drivers/main-hal.c: test for g_timeout_add_seconds
