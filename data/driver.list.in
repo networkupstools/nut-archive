@@ -677,6 +677,7 @@
 "Oneac"	"ups"	"1"	"ON2000XIU"	"advanced interface"	"oneac"
 
 "Online"	"ups"	"1"	"P-Series"	""	"genericups upstype=14"
+"Online"	"ups"	"2"	"Zinto A"	""	"blazer_usb"
 "Online"	"ups"	"1"	"Zinto D"	""	"optiups"
 "Online"	"ups"	"2"	"Yunto YQ450"	""	"blazer_usb"
 
@@ -766,6 +767,8 @@
 "Raritan"	"pdu"	"3"	"Intelligent PDU - Dominion PX"	"no report, but should be supported"	"snmp-ups (experimental)"
 "Raritan"	"pdu"	"3"	"Metered PDU - Raritan PM"	"no report, but should be supported"	"snmp-ups (experimental)"
 "Raritan"	"pdu"	"3"	"Switched PDU - Raritan RPC"	"no report, but should be supported"	"snmp-ups (experimental)"
+
+"REDi"	"ups"	"2"	"Blazer 400VA / 600VA / 800VA"	""	"blazer_ser"
 
 "Repotec"	"ups"	"1"	"RPF525/625/800/1000"	""	"safenet"
 "Repotec"	"ups"	"1"	"RPT-800A"	""	"genericups upstype=13"
