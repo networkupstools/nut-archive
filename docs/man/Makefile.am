@@ -158,6 +158,8 @@ SRC_DEV_PAGES = \
 	nutscan_add_option_to_device.txt \
 	nutscan_add_device_to_device.txt \
 	nutscan_init.txt \
+	nutscan_scan_eaton_serial.txt \
+	nutscan_get_serial_ports_list.txt \
 	libupsclient-config.txt \
 	skel.txt
 
@@ -229,6 +231,8 @@ MAN3_DEV_PAGES = \
 	nutscan_free_device.3 \
 	nutscan_add_option_to_device.3 \
 	nutscan_add_device_to_device.3 \
+	nutscan_scan_eaton_serial.3 \
+	nutscan_get_serial_ports_list.3 \
 	nutscan_init.3
 
 MAN1_DEV_PAGES = \
@@ -283,6 +287,8 @@ HTML_DEV_MANS = \
 	nutscan_free_device.html \
 	nutscan_add_option_to_device.html \
 	nutscan_add_device_to_device.html \
+	nutscan_scan_eaton_serial.html \
+	nutscan_get_serial_ports_list.html \
 	nutscan_init.html \
 	libupsclient-config.html \
 	skel.html
