@@ -65,6 +65,18 @@ Scan NUT servers using Avahi request on the current network interfaces. No IP re
 *-I* | *--ipmi_scan*::
 Scan NUT compatible power supplies available via IPMI on the current host, or over the network.
 
+*-E* | *--eaton_serial* 'serial ports'::
+Scan Eaton devices (XCP and SHUT) available via serial bus on the current host.
+This option must be requested explicitely, even for a complete scan.
+'serial ports' can be expressed in various forms:
+
+- 'auto' to scan all serial ports,
+- a range of 1 to N number(s), hyphen separated, describing the range of ports
+using 'X' or 'X-Y', where X and Y are integer refering to the port numbers,
+starting from the value '1',
+- a list of ports name, coma separated, like '/dev/ttyS1,/dev/ttyS4'.
+
+
 NETWORK OPTIONS
 ---------------
 
@@ -181,6 +193,11 @@ To scan NUT servers with a timeout of 10 seconds on IP range 192.168.0.0 to 192.
 To scan for power supplies, through IPMI (1.5 mode) over the network, on address range 192.168.0.0 to 192.168.0.255:
 
 *nut-scanner -I -m 192.168.0.0/24 -b username -B password*
+
+To scan for Eaton serial devices on the 2 first ports (COM1+COM2 on Windows,
+/dev/ttyS0 and /dev/ttyS1 on Linux, ...):
+
+*nut-scanner --eaton_serial 1-2*
 
 SEE ALSO
 --------

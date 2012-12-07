@@ -149,6 +149,7 @@ SRC_DEV_PAGES = \
 	nutscan_scan_nut.txt \
 	nutscan_scan_avahi.txt \
 	nutscan_scan_ipmi.txt \
+	nutscan_scan_eaton_serial.txt \
 	nutscan_display_ups_conf.txt \
 	nutscan_display_parsable.txt \
 	nutscan_cidr_to_ip.txt \
@@ -220,6 +221,7 @@ MAN3_DEV_PAGES = \
 	nutscan_scan_nut.3 \
 	nutscan_scan_avahi.3 \
 	nutscan_scan_ipmi.3 \
+	nutscan_scan_eaton_serial.3 \
 	nutscan_display_ups_conf.3 \
 	nutscan_display_parsable.3 \
 	nutscan_cidr_to_ip.3 \
@@ -273,6 +275,7 @@ HTML_DEV_MANS = \
 	nutscan_scan_nut.html \
 	nutscan_scan_avahi.html \
 	nutscan_scan_ipmi.html \
+	nutscan_scan_eaton_serial.html \
 	nutscan_display_ups_conf.html \
 	nutscan_display_parsable.html \
 	nutscan_cidr_to_ip.html \

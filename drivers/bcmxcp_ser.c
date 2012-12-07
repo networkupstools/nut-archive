@@ -3,10 +3,9 @@
 #include "bcmxcp_io.h"
 #include "serial.h"
 
-#define PW_MAX_BAUD 5
 
 #define SUBDRIVER_NAME	"RS-232 communication subdriver"
-#define SUBDRIVER_VERSION	"0.19"
+#define SUBDRIVER_VERSION	"0.20"
 
 /* communication driver description structure */
 upsdrv_info_t comm_upsdrv_info = {
@@ -17,15 +16,19 @@ upsdrv_info_t comm_upsdrv_info = {
 	{ NULL }
 };
 
+#define PW_MAX_BAUD 5
+
 struct pw_baud_rate {
 	int rate;
 	int name;
 } pw_baud_rates[] = {
-	{ B1200,  1200 },
-	{ B2400,  2400 },
-	{ B4800,  4800 },
-	{ B9600,  9600 },
 	{ B19200, 19200 },
+	{ B9600,  9600 },
+	{ B4800,  4800 },
+	{ B2400,  2400 },
+	{ B1200,  1200 },
+	/* end of structure. */
+	{ 0,  0 }
 };
 
 unsigned char AUT[4] = {0xCF, 0x69, 0xE8, 0xD5};		/* Autorisation	command	*/
@@ -197,7 +200,7 @@ int get_answer(unsigned char *data, unsigned char command)
 	return end_length;
 }
 
-static int command_sequence(unsigned char *command, int command_length, unsigned char *answer)
+int command_sequence(unsigned char *command, int command_length, unsigned char *answer)
 {
 	int	bytes_read, retry = 0;
 
